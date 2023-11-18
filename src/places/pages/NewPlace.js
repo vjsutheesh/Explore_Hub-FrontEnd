@@ -14,7 +14,7 @@ import LoadingSpinner from '../../shared/components/UIElements/LoadingSpinner';
 import { useHistory } from 'react-router-dom/cjs/react-router-dom.min';
 import ImageUpload from '../../shared/components/FormElements/ImageUpload';
 const NewPlace = () => {
-  const API_URL = process.env.REACT_API_URL;
+  const API_URL = process.env.REACT_APP_API_KEY;
   const history = useHistory()
   const auth = useContext(AuthContext)
   const { isLoading , error ,sendRequest , clearError} = useHttpClient()

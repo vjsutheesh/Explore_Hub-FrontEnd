@@ -3,7 +3,7 @@ import "./UserItem.css";
 import { Link } from "react-router-dom";
 import Card from "../../shared/components/UIElements/Card";
 const UserItem = (props) => {
-  const API_URL = process.env.REACT_API_URL;
+  const API_URL = process.env.REACT_APP_API_KEY;
   return (
     <li className="user-item">
         <Card  className="user-item__content">

@@ -9,7 +9,7 @@ import { useHttpClient } from "../../shared/hooks/http-hooks";
 import ErrorModal from "../../shared/components/UIElements/ErrorModal";
 import LoadingSpinner from "../../shared/components/UIElements/LoadingSpinner";
 const PlaceItem = props => {
-  const API_URL = process.env.REACT_API_URL;
+  const API_URL = process.env.REACT_APP_API_KEY;
   const { isLoading, error, sendRequest, clearError } = useHttpClient();
   const auth = useContext(AuthContext);
   const [showMap, setShowMap] = useState(false);

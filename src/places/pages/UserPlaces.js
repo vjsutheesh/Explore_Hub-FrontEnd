@@ -20,7 +20,7 @@ import LoadingSpinner from "../../shared/components/UIElements/LoadingSpinner";
 // ];
 
 const UserPlaces = () => {
-  const API_URL = process.env.REACT_API_URL;
+  const API_URL = process.env.REACT_APP_API_KEY;
   const [loadedPlaces, setLoadedPlaces] = useState();
   const { isLoading, error, sendRequest, clearError } = useHttpClient();
   const { userId } = useParams();

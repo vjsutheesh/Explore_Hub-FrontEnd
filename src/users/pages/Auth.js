@@ -16,7 +16,7 @@ import { useForm } from "../../shared/hooks/form-hook";
 import "./Auth.css";
 
 const Auth = () => {
-  const API_URL = process.env.REACT_API_URL;
+  const API_URL = process.env.REACT_APP_API_KEY;
   const auth = useContext(AuthContext);
   const [isLoginMode, setIsLoginMode] = useState(true);
   const { isLoading, error, sendRequest, clearError } = useHttpClient();

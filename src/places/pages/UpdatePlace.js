@@ -30,7 +30,7 @@ import { AuthContext } from "../../shared/context/auth-context";
 // ];
 
 const UpdatePlace = () => {
-  const API_URL = process.env.REACT_API_URL;
+  const API_URL = process.env.REACT_APP_API_KEY;
   const auth = useContext(AuthContext)
   const history = useHistory()
   const { isLoading, error, sendRequest, clearError } = useHttpClient();
