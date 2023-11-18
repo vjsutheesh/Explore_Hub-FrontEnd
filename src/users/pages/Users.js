@@ -19,7 +19,7 @@ const Users = () => {
       } catch (err) {}
     };
     fetchUsers();
-  }, [sendRequest]);
+  }, [sendRequest,API_URL]);
 
   return (
     <>
