@@ -1,0 +1,13 @@
+.map {
+    width: 100%;
+    height: 10%;
+    background-color: lightgray;
+  }
+
+@media (max-width: 768px) {
+    .google-map {
+        left: calc(50% - 20rem);
+        width: 20rem;
+    }
+    }
+ 
